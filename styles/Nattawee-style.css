@@ -1,0 +1,20 @@
+html {
+    background-color: rgb(115, 113, 211);
+}
+
+body {
+    width: 600px;
+    margin: auto;
+    background-color: aqua;
+    padding: 20px 20px 20px;
+    border: 5px solid black;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+
+  img {
+    display: block;
+    margin: auto;
+  }
