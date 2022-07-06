@@ -1,0 +1,18 @@
+table, td, th {
+    border: 1px solid black;
+    border-collapse: separate;
+}
+
+td, th {
+    text-align: center;
+}
+
+
+h4 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
