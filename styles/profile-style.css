@@ -1,0 +1,15 @@
+html {
+    background-color: aqua;
+}
+
+img {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.head {
+    font-weight: bold;
+}
