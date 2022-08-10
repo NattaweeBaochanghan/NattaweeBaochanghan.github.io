@@ -19,20 +19,27 @@ function ask() {
     let inputNumber = prompt("Enter a positive integer");
     intInput = parseFloat(inputNumber);
 }
-list = [];
-ask();
 
-while(Number.isInteger(intInput) == false) {
-    ask();
+function collect() {
+    while (Number.isInteger(intInput) == true) {
 
-    while (Number.isInteger(intInput) == true && intInput >= 0) {
-        list.push(intInput);
-        ask();
-
-        if (Number.isInteger(intInput) == true && intInput < 0) {
+        if(intInput >= 0) {
+            list.push(intInput);
+            ask();
+        }else if ( intInput < 0) {
+            if(list.length == 0) {
+                alert("For the list 0 the average is 0, the minimum is 0, and the maximum is 0")
+            }
             displaystat(list);
             break;
         }
+    }
+}
 
-    } 
+list = [];
+ask();
+collect();
+while(Number.isInteger(intInput) == false) {
+    ask();
+    collect();
 }
